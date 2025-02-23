@@ -137,7 +137,20 @@
                 </button>
             </div>
         </div>
+        <div id="loadingAnimation">
+            <iframe src="./src/components/loading-animation.html" 
+                    class="loading-frame"
+                    title="Loading animation">
+            </iframe>
+        </div>
         <script src="./src/script.js"></script>
     <script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+    <script>
+        // Show loading
+        document.getElementById('loadingAnimation').classList.remove('hidden');
+
+        // Hide loading
+        document.getElementById('loadingAnimation').classList.add('hidden');
+    </script>
     </body>
     </html>

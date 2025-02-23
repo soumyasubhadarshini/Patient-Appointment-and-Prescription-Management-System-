@@ -112,3 +112,13 @@ let currentRole = null;
         }
         document.getElementById('loginForm').reset();
     }
+
+    // Show loading
+    function showLoading() {
+        document.getElementById('loadingAnimation').classList.remove('hidden');
+    }
+
+    // Hide loading
+    function hideLoading() {
+        document.getElementById('loadingAnimation').classList.add('hidden');
+    }
